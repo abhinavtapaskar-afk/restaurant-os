@@ -2,6 +2,16 @@
 
 A modern, full-stack SaaS platform for restaurants to manage their entire operations - from online ordering to table bookings, menu management, and analytics.
 
+## 🚀 ONE-CLICK DEPLOY
+
+Deploy to Vercel in one click:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fabhinavtapaskar-afk%2Frestaurant-os&project-name=restaurant-os&repository-name=restaurant-os&root-directory=apps/web&env=NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY,SUPABASE_SERVICE_ROLE_KEY&envDescription=Supabase%20credentials%20required%20for%20database%20and%20authentication&envLink=https%3A%2F%2Fsupabase.com%2Fdashboard%2Fproject%2F_%2Fsettings%2Fapi)
+
+**Before deploying**: Get your Supabase credentials from [supabase.com/dashboard](https://supabase.com/dashboard)
+
+---
+
 ## 🚀 Features
 
 ### For Restaurant Owners
@@ -121,65 +131,25 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 📖 Documentation
 
-### Database Schema
-
-The complete database schema is in \`packages/database/schema.sql\`. It includes:
-
-- **restaurants** - Restaurant information and settings
-- **menu_items** - Menu items with pricing and availability
-- **menu_categories** - Menu organization
-- **orders** - Customer orders with status tracking
-- **bookings** - Table reservations
-- **customers** - Customer database with loyalty points
-
-### Authentication
-
-Authentication is handled by Supabase Auth with:
-- Email/password signup and login
-- Email verification
-- Password reset
-- Session management
-
-### API Routes
-
-API routes are in \`apps/web/app/api/\`:
-- \`/api/menu\` - Menu management
-- \`/api/orders\` - Order processing
-- \`/api/bookings\` - Booking management
-- \`/api/payments\` - Payment processing
-
-## 🎨 Customization
-
-### Branding
-Each restaurant can customize:
-- Logo and banner images
-- Primary and secondary colors
-- Restaurant information
-- Custom subdomain
-
-### Menu
-- Add unlimited menu items
-- Organize by categories
-- Set prices and availability
-- Upload food photos
-- Mark items as veg/non-veg
+- **[Quick Start Guide](QUICKSTART.md)** - Get running in 10 minutes
+- **[Setup Guide](docs/SETUP.md)** - Detailed setup instructions
+- **[Deployment Guide](docs/DEPLOYMENT.md)** - Deploy to production
+- **[API Documentation](docs/API.md)** - Complete API reference
+- **[One-Click Deploy](DEPLOY_BUTTON.md)** - Deploy with one click
 
 ## 🚢 Deployment
 
 ### Deploy to Vercel
 
+Click the button above or:
+
 1. Push your code to GitHub
 2. Import project in Vercel
-3. Add environment variables
-4. Deploy!
+3. Set Root Directory to \`apps/web\`
+4. Add environment variables
+5. Deploy!
 
-\`\`\`bash
-vercel
-\`\`\`
-
-### Environment Variables in Production
-
-Make sure to add all environment variables from \`.env.example\` in your Vercel project settings.
+See [DEPLOYMENT.md](docs/DEPLOYMENT.md) for detailed instructions.
 
 ## 📊 Pricing Tiers
 
@@ -191,7 +161,7 @@ Make sure to add all environment variables from \`.env.example\` in your Vercel 
 - Basic analytics
 - Up to 200 orders/month
 
-### Pro - ₹5,999/month
+### Pro - ₹5,999/month (Most Popular)
 - Everything in Starter
 - Custom domain
 - Online payments (UPI/Card)
@@ -210,11 +180,11 @@ Make sure to add all environment variables from \`.env.example\` in your Vercel 
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ## 📝 License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
@@ -225,7 +195,7 @@ This project is licensed under the MIT License.
 
 ## 📧 Contact
 
-For questions or support, reach out to:
+For questions or support:
 - Email: abhinavtapaskar@gmail.com
 - GitHub: [@abhinavtapaskar-afk](https://github.com/abhinavtapaskar-afk)
 
